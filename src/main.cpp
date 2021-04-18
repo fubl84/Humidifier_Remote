@@ -253,7 +253,7 @@ void setup()
 
   tft.begin();
 
-  tft.setRotation(3);
+  tft.setRotation(1);
 
   touch.begin();
   
@@ -472,11 +472,11 @@ void detectButtons(void)
   {
     if(Y > 168)
     {
-      buttonPressed("Ventilator");
+      buttonPressed("Humidifier");
     }
     else
     {
-      buttonPressed("Humidifier");
+      buttonPressed("Ventilator");
     }
   }
   else
@@ -485,11 +485,11 @@ void detectButtons(void)
     {
       if(Y > 168)
       {
-        buttonPressed("Heatmat");
+        buttonPressed("Power");
       }
       else
       {
-        buttonPressed("Power");
+        buttonPressed("Heatmat");
       }
     }
     else{}
